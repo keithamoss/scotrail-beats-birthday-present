@@ -21,10 +21,11 @@ pip install -r requirements.txt
 
 Source an appropriately licensed music clip as an MP3 file and update the `background_music` file pointer in the last cell.
 
+For example, using `youtube-dl` to grab a clip from a stream (via [StackOverflow](https://stackoverflow.com/questions/37040798/how-do-you-use-youtube-dl-to-download-live-streams-that-are-live)):
+
 ```
 youtube-dl --list-formats 'https://www.youtube.com/watch?v=jfKfPfyJRdk'
 youtube-dl --format 96 --extract-audio --audio-format mp3 'https://www.youtube.com/watch?v=jfKfPfyJRdk'
-https://stackoverflow.com/questions/37040798/how-do-you-use-youtube-dl-to-download-live-streams-that-are-live
 ```
 
 # Resources
@@ -53,5 +54,5 @@ https://stackoverflow.com/questions/37040798/how-do-you-use-youtube-dl-to-downlo
 
 ## Pydub
 
-https://github.com/jiaaro/pydub/blob/master/API.markdown
-https://www.thepythoncode.com/article/concatenate-audio-files-in-python
+- https://github.com/jiaaro/pydub/blob/master/API.markdown
+- https://www.thepythoncode.com/article/concatenate-audio-files-in-python
